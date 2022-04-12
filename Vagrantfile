@@ -38,7 +38,7 @@ EOF
     cat > /test.sh <<EOF
 #!/bin/bash
 set -eux -o pipefail
-cd /root/go/src/github.com/containerd/cgroups
+cd /root/go/src/github.com/containerd/cgroups/v2
 go test -v ./...
 EOF
     chmod +x /test.sh
